@@ -4,27 +4,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+
 	<title>Drolato Order</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	</script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-	</script>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body>
-	<h1>Drolato Order</h1>
-	<div class="container">
+	<div class="container text-center p-4" style="background-color: #ffc2f0; color: white">
+		<h1>Drolato Order</h1>
+	</div>
+	<div class="container mt-1">
 		<table id="cart" class="table table-hover table-condensed">
 			<thead>
-				<tr>
+				<tr class="">
 					<th>Product</th>
 					<th>Price</th>
 					<th>Scoops</th>
@@ -33,51 +36,86 @@
 			<tbody>
 				<tr>
 					<td data-th="Product">
-						<div class="row">
-							<div class="col-sm-2"><img src="http://placehold.it/100x100" class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Coconut Mango</h4>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">$2.30 per scoop</td>
-							<td data-th="Quantity">
-								<input type="number" id="coconut_mango" class="form-control text-center quantity-scoops-coconut-mango" value="0" min="0">
-							</td>
-          </tr>
+						<div class="d-flex align-items-center">
+							<div class="p-1">
+								<img src="img/coconut_mango.jpg" class="img-responsive"/>
+							</div>
+							<div class="p-3">
+								<h4 class="nomargin">Coconut Mango</h4>
+							</div>
+						</div>
+					</td>
+					<td data-th="Price" class="context-center align-middle">
+						<div class="container d-flex h-100">
+							<div class="row justify-content-center align-self-center mt-2">
+								<p><span class="h3" style="color: #ff8ce3">$2.30</span> per scoop</p>
+							</div>
+						</div>
+					</td>
+					<td data-th="Quantity" class="context-center align-middle">
+						<div class="input-container">
+							<div>
+								<input type="number" id="coconut_mango spinner" class="form-control text-center quantity-scoops-coconut-mango" value="0" min="0">
+							</div>
+						</div>
+					</td>
+        </tr>
 				<tr>
 					<td data-th="Product">
-						<div class="row">
-							<div class="col-sm-2"><img src="http://placehold.it/100x100" class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Salted Caramel</h4>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">$2.50 per scoop</td>
-							<td data-th="Quantity">
+						<div class="d-flex align-items-center">
+							<div class="p-1">
+								<img src="img/salted_caramel.jpg" class="img-responsive"/>
+							</div>
+							<div class="p-3">
+								<h4 class="nomargin">Salted Caramel</h4>
+							</div>
+						</div>
+					</td>
+					<td data-th="Price" class="context-center align-middle">
+						<div class="container d-flex h-100">
+							<div class="row justify-content-center align-self-center mt-2">
+								<p><span class="h3" style="color: #ff8ce3">$2.50</span> per scoop</p>
+							</div>
+						</div>
+					</td>
+					<td data-th="Quantity" class="context-center align-middle">
+						<div class="input-container">
+							<div>
 								<input type="number" id="salted_caramel" class="form-control text-center quantity-scoops-salted-caramel" value="0" min="0">
-							</td>
-          </tr>
+							</div>
+						</div>
+					</td>
+        </tr>
 				<tr>
 					<td data-th="Product">
-						<div class="row">
-							<div class="col-sm-2"><img src="http://placehold.it/100x100" class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Strawberries and Cream</h4>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">$1.90 per scoop</td>
-							<td data-th="Quantity">
+						<div class="d-flex align-items-center">
+							<div class="p-1">
+								<img src="img/strawberries_and_cream.jpg" class="img-responsive"/>
+							</div>
+							<div class="p-3">
+								<h4 class="nomargin">Strawberries and Cream</h4>
+							</div>
+						</div>
+					</td>
+					<td data-th="Price" class="context-center align-middle">
+						<div class="container d-flex h-100">
+							<div class="row justify-content-center align-self-center mt-2">
+								<p><span class="h3" style="color: #ff8ce3">$1.90</span> per scoop</p>
+							</div>
+						</div>
+					</td>
+					<td data-th="Quantity" class="context-center align-middle">
+						<div class="input-container">
+							<div>
 								<input type="number" id="strawberries_cream" class="form-control text-center quantity-scoops-strawberries-cream" value="0" min="0">
-							</td>
+							</div>
+						</div>
+					</td>
           </tr>
 					</tbody>
 					<tfoot>
 						<tr>
               <td>
-
               </td>
               <td>
                 <label><input type="radio" name="type" class="icecream-type" value="Cup" checked> Cup</label>
@@ -88,7 +126,7 @@
               </td>
 							<td>
 
-                <a href="#" class="btn btn-success btn-block checkout-button">
+                <a href="#" class="btn btn-block checkout-button" style="background-color: #ff8ce3; color: white">
                   Checkout
                 </a>
               </td>
