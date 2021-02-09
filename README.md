@@ -1,6 +1,6 @@
 # Drolato
 
-This is a website project that I am redoing to make it more appealing to client, as a part of my Commonwealth Bank Virtual Internship.
+This is a website project, that I am redoing to make it more appealing to client, as a part of my Commonwealth Bank Virtual Internship.
 
 ## Creators
 
