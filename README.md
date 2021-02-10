@@ -11,3 +11,4 @@ This is a website project, that I am redoing to make it more appealing to the cl
 - HTML
 - CSS
 - JavaScript
+- jQuery
