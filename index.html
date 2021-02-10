@@ -21,10 +21,10 @@
 </head>
 
 <body>
-	<div class="container text-center p-4" style="background-color: #ffc2f0; color: white">
+	<div class="container text-center p-4 rounded-bottom" style="background-color: #ffc2f0; color: white">
 		<h1>Drolato Order</h1>
 	</div>
-	<div class="container mt-1">
+	<div class="container mt-2">
 		<table id="cart" class="table table-hover table-condensed">
 			<thead>
 				<tr class="">
@@ -114,26 +114,31 @@
           </tr>
 					</tbody>
 					<tfoot>
-						<tr>
-              <td>
-              </td>
-              <td>
-                <label><input type="radio" name="type" class="icecream-type" value="Cup" checked> Cup</label>
-                &nbsp;
-                <label><input type="radio" class="icecream-type" name="type" value="Cone"> Cone</label>
-                <br />
-                 <input type="text" class="form-control name-for-checkout" placeholder="Enter your name to checkout!">
-              </td>
-							<td>
-
-                <a href="#" class="btn btn-block checkout-button" style="background-color: #ff8ce3; color: white">
-                  Checkout
-                </a>
-              </td>
-						</tr>
-
+						<td>
+						</td>
+						<td>
+							<div class="d-flex justify-content-end">
+								<label class="container-radio pr-4">
+									<input type="radio" name="type" class="icecream-type" value="Cup" checked>
+									<h5>Cup</h5>
+									<span class="checkmark"></span>
+								</label>
+								<label class="container-radio">
+									<input type="radio" name="type" class="icecream-type" value="Cone">
+									<h5>Cone</h5>
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</td>
+						<td>
+							<div class="">
+								<input type="text" class="form-control name-for-checkout mb-1" placeholder="Enter your name :)">
+								<a href="#" class="btn btn-block checkout-button" style="background-color: #ff8ce3; color: white">Checkout</a>
+							</div>
+						</td>
 					</tfoot>
 				</table>
+
 </div>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="script.js">
